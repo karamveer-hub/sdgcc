@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karamveer Sachdeva</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @font-face {
+            font-family: "Proxima Nova";
+
+            src: url("fonts/ProximaNovaFont.otf");
+        }
+
+        @font-face {
+    font-family: 'Campton';
+    src:url('fonts/Campton-Medium.woff') format('woff');
+}
+@font-face {
+    font-family: 'Red Hat Display';
+    src: url('fonts/RedHatDisplay-Medium.woff') format('woff');
+}
+@font-face {
+    font-family: 'Sohne Breit';
+    src: url('fonts/SohneBreit-Kraftig.woff') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+
+        @font-face {
+            font-family: "SohneBreit, ProximaNova, sans-serif";
+
+            src: url("fonts/TestSohneBreit.otf");
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        html {
+            font-family: 'Campton';
+
+        }
+
+        .display_flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .mx-auto {
+            margin: 0 auto;
+            display: block;
+        }
+
+        .wrapper {
+            height: 100%;
+            width: 100%;
+            flex-direction: column;
+            padding: 5px;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100%;
+            max-width: 370px;
+            flex-direction: column;
+            justify-content: center !important;
+        }
+
+        .container .first_div {
+            justify-content: flex-start;
+            color: #045D9F;
+            position: absolute;
+            top: 5px;
+        }
+
+        .container .first_div img {
+            margin-right: 8px;
+            width: 100%;
+            max-width: 370px;
+            padding: 20px 10px 0 10px;
+        }
+
+        .container .second_div {
+            height: 80%;
+            max-height: 470px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 77%;
+        }
+
+        .container .second_div>img {
+            height: 163px;
+            max-width: 163px;
+            margin: 0 auto;
+            border-radius: 50%;
+            box-shadow: 0 0 26px -10px #808080f2;
+            object-fit: cover;
+        }
+
+        .second_div div {
+            display: flex;
+        }
+
+        .second_div div:nth-child(2) {
+            flex-direction: column;
+        }
+
+        .second_div div:nth-child(3) a {
+            height: 42px;
+            width: 42px;
+            flex-direction: column;
+            text-decoration: none;
+            align-items: center;
+        }
+
+        .second_div div:nth-child(3) a div {
+            border-radius: 50%;
+            height: 85%;
+            width: 85%;
+            padding: 7px;
+            box-shadow: 0 6px 26px -10px #808080f2;
+        }
+
+        .second_div div:nth-child(3) a p {
+            color: black;
+            font-size: 10px;
+            margin-bottom: -7px;
+            position: relative;
+        }
+
+        .second_div div {
+            width: 100%;
+        }
+
+        #importBtn {
+            width: 100%;
+            padding: 7px 0;
+            color: #0468b1;
+            background: none;
+            border: 3px solid #FF3D00;
+            border-radius: 5px;
+            font-weight: 700;
+            font-size: 16px;
+        }p,h1{text-align: center;}
+    </style>
+</head>
+
+<body>
+    <section class="wrapper display_flex">
+        <div class="container display_flex">
+            <div class="first_div display_flex">
+                <img src="images/LOGO.svg" alt="Brandwidth Logo">
+                <!-- <h2 style="font-size: 18px; font-family: 'Proxima Nova'">United Nation <br> Development Programme</h2> -->
+            </div>
+            <div class="second_div display_flex mx-auto">
+                <img src=http://vcard.techworksworld.com/images/vibhash_vaibhav.png alt="Profile Pic">
+                <div class="display_flex">
+                    <h1 style="font-size: 26px;line-height: 28px; font-weight: 400;letter-spacing: 0.52px; font-family: 'Sohne Breit';">
+                        Vibhash
+                    </h1>
+                    <p style="font-size:16px; line-height: 21px;letter-spacing: 0.48px;font-family: 'Red Hat Display';">web designer</p>
+                </div>
+                <div class="display_flex">
+                    <a class="display_flex" href="tel:8102920920">
+                        <div style="background-color: #26CA18;">
+                            <img src="images/call.png" alt="">
+                        </div>
+                        <p>Contact</p>
+                    </a>
+                    <a class="display_flex" href="mailto:vibhash@techworks.co.in">
+                        <div style="background-color: #DD7656;">
+                            <img src="images/at.png" alt="">
+                        </div>
+                        <p>Mail</p>
+                    </a>
+                    <a class="display_flex" href="techworks.com">
+                        <div style="background-color: #567CDD;">
+                            <img src="images/web.png" alt="">
+                        </div>
+                        <p>Web</p>
+                    </a>
+                </div>
+                <div>
+                    <button id="importBtn">
+                        <img src="images/file-import.png" alt="Import Icon" style="width: 24px;height: 24px;">
+                        <span style="color: #FF3D00; vertical-align: super;font-family: 'Campton';letter-spacing: 0.32px;">Save Contact</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        var saveBtn = document.getElementById("importBtn");
+        saveBtn.addEventListener("click", function () {
+            saveBtn.disabled=true;
+            setTimeout(() => {
+                saveBtn.disabled=false;
+            }, 5000);
+            // Get the contact information from the website
+            var contact = {
+                name: "Vibhash",
+                phone: "8102920920",
+                email: "vibhash@techworks.co.in",
+                website: "techworks.com",
+                role: "web designer",
+                org: "techworks organisation",
+            };
+
+            // create a vcard file
+            var vcard = "BEGIN:VCARD
+VERSION:4.0
+FN:" + contact.name + "
+TEL;type=Cell,voice:" + contact.phone + "
+EMAIL;CHARSET=UTF-8;type=Email,Email:" + contact.email + "
+URL;type=Website;CHARSET=UTF-8:" + contact.website + "
+ROLE;CHARSET=UTF-8:" + contact.role + "
+ORG; CHARSET = UTF-8:" + contact.org + "
+END:VCARD";
+            var blob = new Blob([vcard], { type: "text/vcard" });
+            var url = URL.createObjectURL(blob);
+
+            const newLink = document.createElement('a');
+            newLink.download = contact.name + ".vcf";
+            newLink.textContent = contact.name;
+            newLink.href = url;
+
+            newLink.click();
+        });
+    </script>
+</body>
+
+</html>
